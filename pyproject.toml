@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "songpipe"
+version = "0.3.0"
+description = "Seed-to-song pipeline: LLM-written lyrics, ACE-Step rendering, QC critic loop, ASR lyric veto, and mastering — all local on Apple Silicon"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [{ name = "mk" }]
+keywords = ["music", "generation", "ace-step", "mlx", "lyrics", "song"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+dependencies = ["pyyaml", "httpx", "soundfile", "numpy"]
+
+[project.urls]
+Homepage = "https://github.com/REPLACE-ME/songpipe"
+
+[project.scripts]
+songpipe = "songpipe.__main__:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["songpipe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
