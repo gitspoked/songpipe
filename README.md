@@ -126,5 +126,6 @@ The test suite is hermetic — no ACE install, API keys, or network needed.
 
 ## License
 
+Copyright (C) 2026 Matthew Klein and all other respective copyright holders. 
 Apache-2.0. ACE-Step and its model weights, whisper models, and the LLM APIs
 you call are licensed by their respective owners.
