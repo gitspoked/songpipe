@@ -1,0 +1,8 @@
+[project]
+name = "songpipe"
+version = "0.2.0"
+requires-python = ">=3.12"
+dependencies = ["pyyaml", "httpx", "soundfile", "numpy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
