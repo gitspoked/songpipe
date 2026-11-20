@@ -1,7 +1,7 @@
 # songpipe
 
 Seed number in, finished song out — entirely on your own machine (plus the LLM
-APIs you point it at).
+APIs you point it at). Create songs from plain english. 
 
 Give songpipe a seed and it rolls a genre, tempo, and key; has two LLM
 lyricists (Claude and Grok) each write a draft; runs the winning draft through
